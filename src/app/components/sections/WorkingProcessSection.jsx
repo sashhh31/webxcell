@@ -34,7 +34,7 @@ export default function WorkingProcessSection() {
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Content: Title and Description */}
         <div className="text-left lg:pr-12"> 
-          <h2 className="text-5xl font-bold text-gray-400 mb-6">
+          <h2 className="text-5xl font-semibold text-gray-50 mb-6">
             Our <span className="text-[#EF7915]">Working</span> Process
           </h2>
           <p className="text-lg text-gray-400">

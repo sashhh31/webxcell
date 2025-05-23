@@ -12,7 +12,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="py-20 px-8 bg-darkBg text-lightText">
+    <section className="py-20 px-8 bg-gray-900 text-lightText">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Content: Title */}
         <div className="text-left">

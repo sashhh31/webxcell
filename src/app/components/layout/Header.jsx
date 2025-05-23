@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import Button from '../ui/Button';
-
+import Image from 'next/image';
 export default function Header() {
   return (
     <header className="bg-darkBg py-4 px-8 border-b border-gray-800 text-lightText">
       <nav className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">
-          YourLogo
+          <Image src="/assets/logo.png" alt="Logo" width={150} height={150} />
         </Link>
 
         {/* Navigation Links */}

@@ -1,3 +1,4 @@
+'use client'
 import HeroSection from './components/sections/HeroSection';
 import ProjectsGrid from './components/sections/ProjectsGrid';
 import TechnologiesSection from './components/sections/TechnologySection';

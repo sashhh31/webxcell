@@ -58,27 +58,21 @@ export default function ServicesGrid() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Featured Card (first service) */}
-          <div className="md:col-span-1"> 
-            <ServiceCard
-              title={services[0].title}
-              description={services[0].description}
-              icon={services[0].icon}
-              // href={services[0].href}
-            />
-          </div>
-
+          <ServiceCard
+            title={services[0].title}
+            description={services[0].description}
+            icon={services[0].icon}
+            featured
+          />
           {/* Other Service Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:col-span-2"> 
-            {services.slice(1, 3).map((service, index) => ( 
-              <ServiceCard
-                key={index}
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-                // href={service.href}
-              />
-            ))}
-          </div>
+          {services.slice(1, 3).map((service, index) => (
+            <ServiceCard
+              key={index}
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+            />
+          ))}
         </div>
       </div>
     </section>

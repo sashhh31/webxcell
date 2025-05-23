@@ -2,8 +2,12 @@ import React from "react";
 import ConsultationCTA from "../components/sections/ConsultationCTA";
 import PortfolioGridSection from "../components/sections/PortfolioGridSection";
 
+export const metadata = {
+  title: 'Portfolio | WebXcell',
+  description: 'Explore our portfolio of web development projects and digital solutions.',
+};
 
-export default function portfolio() {
+export default function Portfolio() {
   return (
     <main>
         {/* Hero section */}
@@ -16,7 +20,6 @@ export default function portfolio() {
         </h1>
         <p>Home &gt;&gt; Portfolio</p>
       </div>
-
 
       <PortfolioGridSection />
       <ConsultationCTA />

@@ -23,6 +23,11 @@ export default function WhyChooseUsSection() {
       title: 'Innovative Solutions:',
       description: 'We embrace emerging technologies to give our clients competitive advantages',
     },
+    {
+      number: '05',
+      title: 'Ongoing Support:',
+      description: 'our relationship with you doesn\'t end at launch. We are committed to providing ongoing optimisation and optimisation, ensuring that your digital presence continues to drive meaningful results for your business.',
+    },
   ];
 
   return (
@@ -70,12 +75,7 @@ export default function WhyChooseUsSection() {
         </div>
 
         {/* Closing Statement */}
-        <div className="bg-[#1C1C1C] p-8 rounded-2xl shadow-lg text-center">
-          <h3 className="text-3xl font-bold text-gray-100 mb-4">At Webxcell Digital, we believe that:</h3>
-          <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            our relationship with you doesn't end at launch. We are committed to providing ongoing optimisation and optimisation, ensuring that your digital presence continues to drive meaningful results for your business.
-          </p>
-        </div>
+
       </div>
     </section>
   );

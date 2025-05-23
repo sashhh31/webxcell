@@ -47,7 +47,7 @@ export default function FAQSection({ className }) {
     <section className={`py-20 px-8 bg-darkBg text-lightText ${className}`}>
       <div className="max-w-[800px] mx-auto">
         {/* FAQ List */}
-        <div className="space-y-4"> 
+        <div className="space-y-0"> 
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}

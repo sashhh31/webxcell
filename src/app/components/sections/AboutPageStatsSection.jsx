@@ -26,7 +26,7 @@ export default function AboutPageStatsSection() {
           <div key={index} className="flex flex-col items-center">
             <p className="text-5xl text-gray-100 md:text-6xl font-bold mb-4">{stat.value}</p>
             <h3 className="text-2xl text-gray-100 font-semibold mb-3">{stat.title}</h3>
-            <p className="text-base leading-relaxed max-w-sm">{stat.description}</p>
+            <p className="text-base text-gray-100 leading-relaxed max-w-sm">{stat.description}</p>
           </div>
         ))}
       </div>
