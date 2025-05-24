@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const project = {
   title: "Website UI UX Design",
-  mainImage: "/assets/portfolio/portfolio-main.png",
+  mainImage: "/assets/contact-us-bg.png",
   description: `At tempus aenean sapien torquent sed diam class efficitur in mus morbi eros dictum quam augue ac hac erat velit quam libero mi commodo nibh hac fermentum orci ad pharetra consequat justo odio cursus lorem elit dui consectetur magna lacinia sed eleifend egestas egestas viverra volutpat mauris morbi ac primis imperdiet posuere eu erat enim gravida cras congue\n\npellentesque vulputate malesuada dictumst. fames interdum cursus an eu tellus porta ullamcorper accumsan eu adipiscing integer venenatis sagittis a cras curabitur nisi dui cursus eu quam velit accumsan sociosqu vitae sollicitudin sit consequat ultricies rutrum egestas. semper risus nec habitant nullam necus consequat elementum inceptos nam felis penatibus feugiat` ,
   gallery: [
-    "/assets/portfolio/portfolio-gallery1.png",
-    "/assets/portfolio/portfolio-gallery2.png",
+    "/assets/technology-hand.png",
+    "/assets/vr-man.png",
   ],
   goal: `At tempus aenean sapien torquent sed diam class efficitur in mus morbi eros dictum quam augue ac hac erat velit quam libero mi commodo nibh hac fermentum orci ad pharetra consequat justo odio cursus lorem elit dui consectetur magna lacinia sed eleifend egestas egestas viverra volutpat mauris morbi ac primis imperdiet posuere eu erat enim gravida cras congue`,
   challenges: `Future, as it seeks to lead the industry in technological innovation and suit enoble building practices to deliver long-lasting value for its clients.`,
@@ -30,19 +30,19 @@ const project = {
 
 const recentProjects = [
   {
-    image: "/assets/portfolio/portfolio-gallery1.png",
+    image: "/assets/technology-hand.png",
     title: "Web Site & App Design",
     category: "Branding Design",
     href: "#",
   },
   {
-    image: "/assets/portfolio/portfolio-gallery2.png",
+    image: "/assets/vr-man.png",
     title: "Web Site & App Design",
     category: "Branding Design",
     href: "#",
   },
   {
-    image: "/assets/portfolio/portfolio-main.png",
+    image: "/assets/consultation-bg.png",
     title: "App UI Design",
     category: "Branding Design",
     href: "#",
@@ -55,8 +55,8 @@ export default function PortfolioDetailsPage() {
       <main>
         {/* Hero Section */}
         <div
-          className="relative bg-cover bg-center h-[300px] flex flex-col text-center p-16"
-          style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
+        className="relative bg-contain bg-center h-[580px] w-[1420px] items-center justify-center flex flex-col  text-center p-16"
+        style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
         >
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Portfolio Details</h1>
           <p className="text-lg text-gray-300">Home&gt;&gt; Portfolio &gt;&gt; Portfolio details</p>
@@ -67,7 +67,7 @@ export default function PortfolioDetailsPage() {
           {/* Project Content */}
           <div className="lg:col-span-2">
             <div className="bg-[#181818] rounded-xl overflow-hidden shadow-lg">
-              <div className="relative w-full h-80 rounded-t-xl overflow-hidden">
+              <div className="relative w-[1320px] h-[700px] rounded-t-xl overflow-hidden">
                 <Image src={project.mainImage} alt={project.title} fill className="object-cover" />
               </div>
               <div className="p-8">
@@ -78,7 +78,7 @@ export default function PortfolioDetailsPage() {
                 {/* Gallery */}
                 <div className="flex space-x-4 mb-8">
                   {project.gallery.map((img, idx) => (
-                    <div key={idx} className="relative w-1/2 h-40 rounded-lg overflow-hidden">
+                    <div key={idx} className="relative w-[405px] h-[375px] rounded-lg overflow-hidden">
                       <Image src={img} alt="Gallery" fill className="object-cover" />
                     </div>
                   ))}
@@ -143,7 +143,7 @@ export default function PortfolioDetailsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {recentProjects.map((proj, idx) => (
               <div key={idx} className="bg-[#181818] rounded-xl overflow-hidden shadow-lg group">
-                <div className="relative w-full h-56">
+                <div className="relative w-[420px] h-[420px]">
                   <Image src={proj.image} alt={proj.title} fill className="object-cover" />
                 </div>
                 <div className="p-6">

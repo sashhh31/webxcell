@@ -4,8 +4,8 @@ import Button from '../ui/Button';
 export default function HeroSection() {
   return (
     <section
-      className="relative bg-cover bg-center h-[600px] flex justify-center text-center p-16"
-      style={{ backgroundImage: "url('/assets/bg-grid.png')" }} 
+    className="relative bg-contain bg-center h-[780px] w-[1420px] items-center justify-center flex flex-col  text-center p-16"
+    style={{ backgroundImage: "url('/assets/bg-grid.png')" }} 
     >
 
       <div className="relative z-10 max-w-4xl mx-auto">

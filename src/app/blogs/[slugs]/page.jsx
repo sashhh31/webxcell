@@ -73,8 +73,8 @@ export default function BlogDetailsPage({ params }) {
       <main>
         {/* Hero Section */}
         <div
-          className="relative bg-cover bg-center h-[300px] flex flex-col text-center p-16"
-          style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
+        className="relative bg-contain bg-center h-[580px] w-[1420px] items-center justify-center flex flex-col  text-center p-16"
+        style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
         >
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Blogs Details</h1>
           <p className="text-lg text-gray-300">Home&gt;&gt; Blogs &gt;&gt; Blogs Details</p>
@@ -85,7 +85,7 @@ export default function BlogDetailsPage({ params }) {
           {/* Blog Content */}
           <div className="lg:col-span-2">
             <div className="bg-[#181818] rounded-xl overflow-hidden shadow-lg">
-              <div className="relative w-full h-80 rounded-t-xl overflow-hidden">
+              <div className="relative w-[840px] h-[600px] rounded-t-xl overflow-hidden">
                 <Image src={blog.image} alt={blog.title} fill className="object-cover" />
               </div>
               <div className="p-8">
@@ -169,7 +169,7 @@ export default function BlogDetailsPage({ params }) {
               <ul className="space-y-4">
                 {blogs.map((post, idx) => (
                   <li key={idx} className="flex items-center space-x-4">
-                    <div className="relative w-16 h-16 flex-shrink-0 rounded overflow-hidden">
+                    <div className="relative w-[100px] h-[100px] flex-shrink-0 rounded overflow-hidden">
                       <Image src={post.image} alt={post.title} fill className="object-cover" />
                     </div>
                     <div>

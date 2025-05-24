@@ -15,7 +15,7 @@ export default function FAQSection({ className }) {
     },
     {
       question: 'Do you offer custom web design or templates?',
-      answer: 'Yes, we specialize in both custom web design tailored to your brand identity and requirements, as well as offering professional template-based solutions for quicker deployment and cost-effectiveness. Our approach depends on your specific needs and budget.',
+      answer: 'Yes, we specialize3 in both custom web design tailored to your brand identity and requirements, as well as offering professional template-based solutions for quicker deployment and cost-effectiveness. Our approach depends on your specific needs and budget.',
     },
     {
       question: 'Can you help with digital transformation projects?',

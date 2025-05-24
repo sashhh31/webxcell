@@ -12,7 +12,7 @@ export default function Portfolio() {
     <main>
         {/* Hero section */}
       <div
-        className="relative bg-cover bg-center h-[400px] flex flex-col  text-center p-16"
+        className="relative bg-contain bg-center h-[580px] w-[1420px] items-center justify-center flex flex-col  text-center p-16"
         style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
       >
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">

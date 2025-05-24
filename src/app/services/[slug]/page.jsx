@@ -6,7 +6,7 @@ export default function ServiceDetailsPage({ params }) {
   // Mock data for demonstration; replace with real data fetching as needed
   const service = {
     title: "SEO Link Building Optimization",
-    image: "/assets/seo-service.jpg", // Replace with your actual image path
+    image: "/assets/contact-us-bg.png", // Replace with your actual image path
     description:
       "75% of online searchers don't go beyond the first page. This means you're invisible if you're not there. The solution is simple: Search Engine Optimisation",
     sections: [
@@ -65,7 +65,9 @@ export default function ServiceDetailsPage({ params }) {
   return (
     <main className="bg-black text-white min-h-screen">
       {/* Header Section */}
-      <div className="relative bg-cover bg-center h-[120px] flex flex-col text-center justify-center p-8" style={{ backgroundImage: "url('/assets/bg-grid.png')" }}>
+      <div 
+        className="relative bg-contain bg-center h-[580px] w-[1420px] items-center justify-center flex flex-col  text-center p-16"
+        style={{ backgroundImage: "url('/assets/bg-grid.png')" }}>
         <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-2">Service Detail</h1>
         <p className="text-gray-300 text-sm">Home &gt;&gt; Services &gt;&gt; Services Details</p>
       </div>
@@ -75,8 +77,8 @@ export default function ServiceDetailsPage({ params }) {
         {/* Left: Main Details */}
         <div className="lg:col-span-2 space-y-8">
           <div className="bg-[#181818] rounded-xl overflow-hidden shadow-lg">
-            <div className="relative w-full h-56 md:h-72">
-              <Image src={service.image} alt={service.title} fill className="object-cover" />
+            <div className="relative w-[840px] h-[600px]">
+              <Image src={service.image} alt={service.title} fill className="object-cover rounded-t-xl" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
@@ -108,30 +110,23 @@ export default function ServiceDetailsPage({ params }) {
             </div>
           </div>
         </div>
-
         {/* Right: Sidebar */}
         <aside className="space-y-8">
-          {/* All Services List */}
-          <div className="bg-[#181818] rounded-xl p-6">
-            <h3 className="text-lg font-semibold mb-4">All Services</h3>
-            <ul className="space-y-2">
-              <li><Link href="/services/seo-link-building-optimization" className="block text-[#FE7915] hover:underline">SEO Link Building Optimization</Link></li>
-              <li><Link href="/services/web-development" className="block text-[#FE7915] hover:underline">Web Development</Link></li>
-              <li><Link href="/services/digital-marketing" className="block text-[#FE7915] hover:underline">Digital Marketing</Link></li>
-            </ul>
-          </div>
-          {/* Opening Hours */}
-          <div className="bg-[#181818] rounded-xl p-6">
-            <h3 className="text-lg font-semibold mb-4">Opening Hours</h3>
+          {/* Project Information Card */}
+          <div className="bg-[#181818] rounded-xl p-6 shadow-lg">
+            <h3 className="text-lg font-semibold mb-4">Project Information</h3>
             <ul className="text-gray-300 text-sm space-y-1">
-              <li>Mon-Fri: 9:00-21:00 (GMT)</li>
-              <li>Sat: 9:00-19:00 (GMT)</li>
-              <li>Sun: Closed</li>
+              <li><span className="font-bold text-white">Client:</span> Jessica Brown</li>
+              <li><span className="font-bold text-white">Budget:</span> USD $50,499</li>
+              <li><span className="font-bold text-white">Category:</span> Branding, Marketing</li>
+              <li><span className="font-bold text-white">Date:</span> 20 October 2023</li>
             </ul>
-            <button className="mt-4 w-full bg-[#FE7915] text-white font-bold py-2 rounded hover:bg-opacity-90 transition">Book Appointment Now</button>
+            <div className="flex space-x-3 mt-4 justify-center">
+              {/* Social icons here */}
+            </div>
           </div>
           {/* Contact Card */}
-          <div className="bg-[#181818] rounded-xl p-6 flex flex-col items-center text-center">
+          <div className="bg-[#181818] rounded-xl p-6 flex flex-col items-center text-center shadow-lg">
             <div className="w-12 h-12 rounded-full bg-[#FE7915] flex items-center justify-center mb-4">
               <span className="text-2xl text-white">&#128222;</span>
             </div>

@@ -51,8 +51,8 @@ export default function ProjectGallery() {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={500}
-                height={400}
+                width={630}
+                height={500}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
 

@@ -9,37 +9,37 @@ export default function PortfolioGridSection() {
       image: '/assets/portfolio/project1.png',
       category: 'Agency', 
       title: 'Innovative Ideas',
-      link: '#', 
+      link: '/portfolio/project1', 
     },
     {
       image: '/assets/portfolio/project2.png', 
       category: 'Strategy',
       title: 'Creative Concepts',
-      link: '#',
+      link: '/portfolio/project2',
     },
     {
       image: '/assets/portfolio/project3.png', 
       category: 'Marketing',
       title: 'Digital Marketing',
-      link: '#',
+      link: '/portfolio/project3',
     },
     {
       image: '/assets/portfolio/project4.png', 
       category: 'Development',
       title: 'Web Design',
-      link: '#',
+      link: '/portfolio/project4',
     },
     {
       image: '/assets/portfolio/project5.png', 
       category: 'B2B',
       title: 'B2B Solutions',
-      link: '#',
+      link: '/portfolio/project5',
     },
     {
       image: '/assets/portfolio/project6.png', 
       category: 'Collaboration',
       title: 'Team Work',
-      link: '#',
+      link: '/portfolio/project6',
     },
     // Add more projects here as needed for multiple pages
   ];
@@ -50,7 +50,7 @@ export default function PortfolioGridSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="group bg-[#1C1C1C] rounded-xl overflow-hidden shadow-lg relative">
-              <div className="relative w-full h-96"> 
+              <div className="relative w-[500px] h-[500px]"> 
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -66,7 +66,7 @@ export default function PortfolioGridSection() {
                   <h3 className="text-xl font-bold text-lightText mb-4">{project.title}</h3>
                   </div>
                   <Link href={project.link} className="inline-flex bg-orange-500 rounded-full p-2 w-10 h-10 items-center text-lightText font-semibold hover:text-primary transition-colors">
-                    <span className="ml-2 text-white "><FaArrowRight/></span>
+                    <span className="ml-1 text-white "><FaArrowRight/></span>
                   </Link>
                 </div>
               </div>

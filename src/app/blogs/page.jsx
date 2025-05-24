@@ -45,8 +45,8 @@ export default function BlogPage() {
       <main>
         {/* Hero Section */}
         <div
-          className="relative bg-cover bg-center h-[400px] flex flex-col text-center p-16"
-          style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
+        className="relative bg-contain bg-center h-[580px] w-[1420px] items-center justify-center flex flex-col  text-center p-16"
+        style={{ backgroundImage: "url('/assets/bg-grid.png')" }}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
             Blogs & News
@@ -62,7 +62,7 @@ export default function BlogPage() {
           <div className="lg:col-span-2 space-y-12">
             {blogs.map((blog, idx) => (
               <div key={idx} className="bg-[#181818] rounded-xl overflow-hidden shadow-lg">
-                <div className="relative w-full h-72">
+                <div className="relative w-[840px] h-[600px]">
                   <Image src={blog.image} alt={blog.title} fill className="object-cover" />
                 </div>
                 <div className="p-8">
@@ -117,7 +117,7 @@ export default function BlogPage() {
               <ul className="space-y-4">
                 {recentPosts.map((post, idx) => (
                   <li key={idx} className="flex items-center space-x-4">
-                    <div className="relative w-16 h-16 flex-shrink-0 rounded overflow-hidden">
+                    <div className="relative w-[100px] h-[100px] flex-shrink-0 rounded overflow-hidden">
                       <Image src={post.image} alt={post.title} fill className="object-cover" />
                     </div>
                     <div>

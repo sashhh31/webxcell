@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function ContactFormSection() {
   return (
-    <section className="relative -top-40 py-20 px-8 bg-darkBg text-lightText">
+    <section className="relative  py-20 px-8 bg-darkBg text-lightText">
       <div className="max-w-[1280px] mx-auto">
         {/* Background Image Container */}
         <div className="relative w-full h-[600px] md:h-[700px] rounded-xl overflow-visible shadow-lg flex items-center justify-center">

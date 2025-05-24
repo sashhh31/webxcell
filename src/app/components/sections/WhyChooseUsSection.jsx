@@ -31,7 +31,7 @@ export default function WhyChooseUsSection() {
   ];
 
   return (
-    <section className="py-20 px-8 bg-darkBg text-lightText">
+    <section className="py-20 bg-darkBg text-lightText">
       <div className="max-w-[1280px] mx-auto">
         {/* Video Thumbnail Section */}
         <div className="relative w-full h-[500px] rounded-xl overflow-hidden mb-16">
@@ -39,7 +39,7 @@ export default function WhyChooseUsSection() {
             src="/assets/why-choose-us-video-bg.png"
             alt="Why Choose Us Video"
             fill
-            sizes="100vw"
+            sizes="width: 1920px, height: 800px"
             className="object-cover object-center"
           />
           <div className="absolute inset-0 flex items-center justify-center z-10">

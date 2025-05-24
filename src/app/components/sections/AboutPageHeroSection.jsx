@@ -18,7 +18,7 @@ export default function AboutPageHeroSection() {
             src="/assets/about-team.png"
             alt="Team working"
             fill 
-            sizes="(max-width: 1024px) 100vw, 50vw"
+            sizes="width: 645px, height: 700px"
             className="object-cover object-center rounded-xl shadow-lg"
           />
 
